@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief, catchy description of your landing page for SEO purposes.">
+    <title>Your Landing Page Title</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="exact-header">
+    <div class="header-center-container">
+        <img src="images/ryh-logo.png" alt="Remodel Your Home Logo" class="centered-brand-logo">
+    </div>
+    </header>
+    <main>
+        
+        <section class="quote-section">
+    <div class="form-container">
+        
+        <div class="progress-tracker">
+            <div class="step-line"></div>
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+        </div>
+
+        <h2 class="form-heading">Where is your project located?</h2>
+
+        <form class="quote-form">
+            
+            <div class="input-group">
+                <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code" required maxlength="5" pattern="[0-9]*">
+                <span class="input-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5Z"/></svg>
+                </span>
+            </div>
+
+            <div class="input-group dropdown-group">
+                <label for="projectType" class="field-label">Project Type</label>
+                <select id="projectType" name="projectType" required>
+                    <option value="" disabled selected hidden>Roofing Project Type</option>
+                    <option value="asphalt">Asphalt Shingle</option>
+                    <option value="metal">Metal Roofing</option>
+                    <option value="tile">Tile Roofing</option>
+                    <option value="flat">Flat Roof / Commercial</option>
+                    <option value="repair">Roof Repair</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">START YOUR QUOTE</button>
+
+        </form>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+    
+    <div class="footer-disclaimer-container">
+        <p class="disclaimer-text">
+            *Minimum purchase may apply. Financing may be available and may vary; on approved credit; third-party lenders. Add'l charges may apply. 1-day install on select projects. Pricing subject to inspection. New purchases only; limit 1; not combinable. See for full details.
+        </p>
+    </div>
+
+    <div class="sub-footer-bar">
+        <div class="sub-footer-container">
+            <p class="copyright-links">
+                <span>&copy; 2026. All rights reserved.</span>
+                <span class="divider">|</span>
+                <a href="#privacy">Privacy Policy</a>
+                <span class="divider">|</span>
+                <a href="#terms">Terms of Use</a>
+                <span class="divider">|</span>
+                <a href="#ca-privacy">Privacy Notice for CA Residents</a>
+                <span class="divider">|</span>
+                <a href="#do-not-sell">Do Not Sell My Information</a>
+                <span class="divider">|</span>
+                <a href="#unsubscribe">Unsubscribe</a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* Clean Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Header Container mirroring the image format */
+.exact-header {
+    width: 100%;
+    background-color: #ffffff;
+    /* Generous top and bottom padding to give the logo the exact breathing room from your asset */
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Precise Logo Sizing */
+.centered-brand-logo {
+    max-width: 180px; /* Adjust this width slightly if you want it larger or smaller on screen */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive adjustment to keep it proportional on smaller mobile displays */
+@media (max-width: 480px) {
+    .exact-header {
+        padding: 25px 15px;
+    }
+    .centered-brand-logo {
+        max-width: 140px;
+    }
+}
+
+/* Core Quote Section Setup */
+.quote-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    /* Updated global font stack to Lato */
+    font-family: 'Lato', sans-serif; 
+}
+
+.form-container {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 4-Step Progress Bar Layout */
+.progress-tracker {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 240px;
+    margin: 0 auto 25px auto;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Connecting Line behind numbers */
+.step-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #0b72b9;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Individual Step Circles */
+.step {
+    position: relative;
+    width: 39px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 3px solid #0b72b9;
+    border-radius: 50%;
+    color: #0b72b9;
+    font-weight: 700; /* Crisp bold Lato weight */
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Filled Active Step (Step 1) */
+.step.active {
+    background-color: #0b72b9;
+    color: #ffffff;
+}
+
+/* Primary Form Question */
+.form-heading {
+    font-size: 30px;
+    font-weight: 700; /* Ultra-bold option for Lato heading */
+    color: #000000;
+    margin-bottom: 25px;
+    letter-spacing: -0.3px;
+}
+
+/* Form Groups & Fields */
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+    text-align: left;
+}
+
+/* Style for Inputs and Dropdowns */
+.quote-form input[type="text"],
+.quote-form select {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    color: #334155;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.quote-form input[type="text"]:focus,
+.quote-form select:focus {
+    border-color: #0b72b9;
+}
+
+/* Input Right Accent Icon */
+.input-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #c0392b;
+    border-radius: 4px;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.input-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #ffffff;
+}
+
+/* Dropdown Floating Field Label Style */
+.dropdown-group {
+    margin-top: 5px;
+}
+
+.field-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 4px;
+}
+
+/* Custom CSS Arrow Indicator */
+.dropdown-group::after {
+    content: "▼";
+    font-size: 0.7rem;
+    color: #334155;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    pointer-events: none;
+}
+
+/* Large Block Call To Action Submit Button */
+.btn-submit {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    background-color: #0b72b9;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(11, 114, 185, 0.2);
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #095d99;
+}
+
+/* Quick Fix for Small Mobile screens */
+@media (max-width: 480px) {
+    .form-heading {
+        font-size: 1.5rem;
+    }
+}
+/* Core Footer Styling */
+.site-footer {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Disclaimer Wrapper */
+.footer-disclaimer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+/* Gray, light-weight styling for legal disclaimers */
+.disclaimer-text {
+    font-size: 0.8rem;
+    color: #718096; /* Muted slate gray */
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Blue Sub-Footer Bar */
+.sub-footer-bar {
+    width: 100%;
+    background-color: #0b72b9; /* Exact matching brand blue */
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.sub-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Copyright & Inline Links Layout */
+.copyright-links {
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400; /* Bold link weight to match image text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures elements wrap beautifully on mobile */
+    gap: 6px;
+    line-height: 1.5;
+}
+
+/* Legal Links */
+.copyright-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.copyright-links a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Thin pipe dividers (|) */
+.copyright-links .divider {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    margin: 0 2px;
+}
+
+/* Responsive adjustments for narrow viewports */
+@media (max-width: 768px) {
+    .footer-disclaimer-container {
+        padding: 25px 15px;
+    }
+    
+    .disclaimer-text {
+        font-size: 0.75rem;
+    }
+
+    .sub-footer-bar {
+        padding: 15px 15px;
+    }
+
+    .copyright-links {
+        font-size: 0.78rem;
+        gap: 8px; /* Slightly wider spacing for easy thumb-tapping on phone screens */
+    }
+
+    /* Hides vertical pipe dividers on mobile layout to let text stack dynamically */
+    .copyright-links .divider {
+        display: none;
+    }
+    
+    /* Adds a little breathing room between wrapped links on mobile */
+    .copyright-links span, 
+    .copyright-links a {
+        padding: 2px 4px;
+    }
+}
