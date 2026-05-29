@@ -353,6 +353,6 @@ header .cta-section a,
 .footer-phone,
 .footer-socials a,
 .footer-links a {
-    position: relative !important;
+    
     z-index: 20 !important; /* Sits completely on top of the overlay link layer */
 }
